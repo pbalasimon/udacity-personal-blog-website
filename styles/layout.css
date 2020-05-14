@@ -1,0 +1,45 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-areas:
+    "header header header header"
+    "left-sidebar main main right-sidebar"
+    "footer footer footer footer";
+}
+
+header {
+  background-color: yellow;
+  grid-area: header;
+}
+
+#left-sidebar {
+  background-color: red;
+  grid-area: left-sidebar;
+}
+
+main {
+  background-color: aqua;
+  grid-area: main;
+}
+
+#right-sidebar {
+  background-color: bisque;
+  grid-area: right-sidebar;
+}
+
+footer {
+  background-color: blueviolet;
+  grid-area: footer;
+}

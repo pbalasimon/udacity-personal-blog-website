@@ -1,1 +1,133 @@
-post-detail
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Pedro's Personal Blog Website. You will find here a los of interesting posts!" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Pedro's Personal Blog Website</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="header" class="header">
+            <div class="header-container">
+                <a class="header-container__logo" href="index.html">MPB</a>
+                <input id="search" class="header-container__search" type="text" placeholder="Search">
+                <button class="header-container__new-post">New post</button>
+                <i class="fas fa-edit fa-2x header-container__new-post-xs"></i>
+                <div class="header-container__profile">PB</div>
+                </form>
+            </div>
+        </header>
+        <aside id="left-sidebar">
+            <ul>
+                <li>
+                    <a href="#">Reading list</a>
+                </li>
+                <li>
+                    <a href="#">Listing</a>
+                </li>
+                <li>
+                    <a href="#">Podcasts</a>
+                </li>
+                <li>
+                    <a href="#">Videos</a>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            <section>
+                <article class="post">
+                    <h2 class="post__title">
+                        <a class="post__link" href="/post-detail.html">Lorem ipsum title</a>
+                    </h2>
+                    <div class="post__info">
+                        <div class="post__avatar">
+                            JD
+                        </div>
+                        <div class="post__metadata">
+                            <div class="post__author">John Doe</div>
+                            <div class="post__date">May 18</div>
+                        </div>
+                    </div>
+                    <img class="post__image" src="https://fakeimg.pl/800x200/?text=Hello" alt="Hello" />
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi facilis, repellat repudiandae
+                        beatae quo
+                        doloremque reprehenderit. <strong>Eaque</strong>, ad nulla commodi porro repellendus nesciunt
+                        laborum
+                        officia totam adipisci
+                        tempore vitae expedita?</p>
+                    <p><u>Lorem ipsum dolor</u> sit amet consectetur adipisicing elit. Magni aliquam fuga, consectetur
+                        similique
+                        officiis
+                        possimus maiores molestiae repellat voluptatem quia tempora quos dolores, quae nobis deserunt
+                        quam hic enim
+                        illo!</p>
+                    <p><strong>Lorem ipsum</strong>, dolor sit amet consectetur adipisicing elit. Iusto reprehenderit,
+                        modi maxime
+                        in eaque
+                        doloribus at eius laborum libero sapiente <em>perspiciatis delectus itaque atque</em> ratione
+                        quae dolore
+                        minus iure
+                        distinctio?</p>
+                    <figure class="post__image-caption">
+                        <img class="post__image" src='https://fakeimg.pl/800x200/?text=Caption' alt='Caption' />
+                        <figcaption><em>Caption example</em></figcaption>
+                    </figure>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <strong><em>Cumque vel
+                                nulla</em></strong> unde alias quisquam
+                        aliquid, sit magni iusto dolorum consequatur. Recusandae vel ad iure id est at ea officiis illo.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem eligendi quaerat earum.
+                        Voluptatem, iste expedita? Nobis, eum aperiam sit, quae architecto harum suscipit dolorum quia
+                        nostrum, praesentium <strong>facilis debitis?</strong></p>
+                    <hr class="post__actions-separator" />
+                    <div class="post__actions">
+                        <div class="post__comments">
+                            <i class="fas fa-comments"></i>
+                            3 comments
+                        </div>
+                        <div class="post__read-later">
+                            <button type="button" class="post__action-save">Save</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <aside id="right-sidebar">
+            <div class="author-info">
+                <div class="author-info-header">
+                    <div class="author-header-info__avatar">
+                        <div>JD</div>
+                    </div>
+                    <div class="author-header-info__name">John Doe</div>
+                    <div class="author-header-info__twitter">@john.doe</div>
+                </div>
+                <div class="author-info__main">
+                    <div class="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                    <div class="author-info__main-work">
+                        work
+                    </div>
+                    <div class="author-info__main-work-info">
+                        Frontend developer at @home
+                    </div>
+                    <div class="author-info__main-social-networks">
+                        <i class="fab fa-twitter fa-2x"></i>
+                        <i class="fab fa-facebook fa-2x"></i>
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <footer>Pedro's Personal Blog Website - 2020</footer>
+    </div>
+</body>
+
+</html>

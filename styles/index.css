@@ -2,6 +2,7 @@ body {
 }
 
 .post {
+  margin-top: 1em;
   background-color: #ffffff;
   border: 1px solid #e7e8e7;
   border-radius: 5px;
@@ -9,4 +10,8 @@ body {
 }
 
 .post__title {
+}
+
+.post__image-caption {
+  margin: 0;
 }

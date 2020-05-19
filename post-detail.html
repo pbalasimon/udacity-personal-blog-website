@@ -15,16 +15,16 @@
 <body>
     <div class="wrapper">
         <header id="header" class="header">
-            <div class="header-container">
-                <a class="header-container__logo" href="index.html">MPB</a>
-                <input id="search" class="header-container__search" type="text" placeholder="Search">
-                <button class="header-container__new-post">New post</button>
-                <i class="fas fa-edit fa-2x header-container__new-post-xs"></i>
-                <div class="header-container__profile">PB</div>
+            <div class="header__container">
+                <a class="header__logo" href="index.html">MPB</a>
+                <input id="search" class="header__search" type="text" placeholder="Search">
+                <button class="header__new-post">New post</button>
+                <i class="fas fa-edit fa-2x header__new-post-xs"></i>
+                <div class="header__profile">PB</div>
                 </form>
             </div>
         </header>
-        <aside id="left-sidebar">
+        <aside id="left-sidebar" class="left-sidebar left-sidebar-post-detail">
             <ul>
                 <li>
                     <a href="#">Reading list</a>
@@ -99,26 +99,26 @@
                 </article>
             </section>
         </main>
-        <aside id="right-sidebar">
+        <aside id="right-sidebar" class="right-sidebar rigth-sidebar-post-detail">
             <div class="author-info">
-                <div class="author-info-header">
-                    <div class="author-header-info__avatar">
+                <div class="author-info__header">
+                    <div class="author-info__avatar">
                         <div>JD</div>
                     </div>
-                    <div class="author-header-info__name">John Doe</div>
-                    <div class="author-header-info__twitter">@john.doe</div>
+                    <div class="author-info__name">John Doe</div>
+                    <div class="author-info__twitter">@john.doe</div>
                 </div>
                 <div class="author-info__main">
                     <div class="">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </div>
-                    <div class="author-info__main-work">
+                    <div class="author-info__work">
                         work
                     </div>
-                    <div class="author-info__main-work-info">
+                    <div class="author-info__work-info">
                         Frontend developer at @home
                     </div>
-                    <div class="author-info__main-social-networks">
+                    <div class="author-info__social-networks">
                         <i class="fab fa-twitter fa-2x"></i>
                         <i class="fab fa-facebook fa-2x"></i>
                         <i class="fab fa-linkedin fa-2x"></i>
@@ -126,7 +126,7 @@
                 </div>
             </div>
         </aside>
-        <footer>Pedro's Personal Blog Website - 2020</footer>
+        <footer class="footer">Pedro's Personal Blog Website - 2020</footer>
     </div>
 </body>
 

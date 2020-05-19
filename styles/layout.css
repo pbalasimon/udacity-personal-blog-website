@@ -118,6 +118,10 @@ body {
     display: none !important;
   }
 
+  #left-sidebar {
+    padding-top: 52px;
+  }
+
   #left-sidebar > ul {
     display: flex;
     flex-direction: column;
@@ -125,11 +129,22 @@ body {
   }
 
   #right-sidebar {
+    padding-top: 52px;
     grid-area: right-sidebar;
     background-color: #f9fafa;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  #right-sidebar > h3 > a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  #right-sidebar > h3:hover {
+    background-color: #f0f1f1;
   }
 }
 
@@ -228,15 +243,103 @@ header {
 
 #left-sidebar > ul > li {
   line-height: 3.5em;
+  padding-left: 1em;
+  margin-right: 1em;
+}
+
+#left-sidebar > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#left-sidebar > ul > li:hover {
+  cursor: pointer;
+  color: #2e27ce;
+  background-color: #efefef;
 }
 
 main {
   grid-area: main;
   background-color: #f9fafa;
+  padding-bottom: 2em;
 }
 
 .feed {
   text-align: center;
+}
+
+.post__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.post__link {
+  text-decoration: none;
+  color: black;
+}
+
+.post__link:hover {
+  color: #2e27ce;
+}
+
+.post__metadata {
+  color: #080a0a;
+}
+
+.post__avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+}
+
+.post__image {
+  margin-top: 1em;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.post__actions-separator {
+  border: 1px solid #e7e8e7;
+}
+
+.post__actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.post__comments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.post__comments > i {
+  margin-right: 0.5em;
+}
+
+.post__comments:hover {
+  background-color: #f0f1f1;
+}
+
+.post__action-save {
+  border: 0;
+  background-color: #b5bdc4;
+  padding: 0.7em;
+  border-radius: 5px;
+}
+
+.post__action-save:hover {
+  filter: brightness(90%);
+  cursor: pointer;
 }
 
 footer {

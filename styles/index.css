@@ -1,2 +1,12 @@
 body {
 }
+
+.post {
+  background-color: #ffffff;
+  border: 1px solid #e7e8e7;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.post__title {
+}
